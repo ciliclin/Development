@@ -1,0 +1,48 @@
+Script started on 2018年02月08日 (週四) 12時21分24秒
+root@csp9250:/home/csp9250/csp9250_git/shell_script_cookbook# ls
+[0m[01;32marray_test.sh[0m      [01;32mdate_test.sh[0m             [01;32mfile_test.sh[0m      [01;32mIFS_test.sh[0m  [01;32mmath_test.sh[0m    [01;32mquote_test.sh[0m  test.txt
+[01;32mcondition_test.sh[0m  [01;32mfield_separator_test.sh[0m  [01;32mfunction_test.sh[0m  [01;32mlog.sh[0m       output.session  [01;32mread_test.sh[0m   timing.log
+root@csp9250:/home/csp9250/csp9250_git/shell_script_cookbook# cat -n -T 
+array_test.sh            date_test.sh             function_test.sh         math_test.sh             read_test.sh
+condition_test.sh        field_separator_test.sh  IFS_test.sh              output.session           test.txt
+.condition_test.sh.swp   file_test.sh             log.sh                   quote_test.sh            timing.log
+root@csp9250:/home/csp9250/csp9250_git/shell_script_cookbook# cat -n -T array_test.sh 
+     1	#!/bin/bash
+     2	array=(1 3 5 7 9)
+     3	echo "array=(1 3 5 7 9)"
+     4	echo "#echo \${array[0]}"
+     5	echo ${array[0]}
+     6	echo "#echo \${array[*]}"
+     7	echo ${array[@]}
+     8	echo "#echo \${array[@]}"
+     9	echo ${array[*]}
+    10	
+    11	echo "For loop display"
+    12	for index in $(seq 0 4)
+    13	do 
+    14	^Iecho "array[$index]="${array[$index]}
+    15	done
+    16	
+    17	echo "Count array numbers"
+    18	echo "#echo \${#array[*]}"
+    19	echo ${#array[*]}
+    20	
+    21	echo "Define associated array"
+    22	echo "#declare -A a_array"
+    23	declare -A a_array
+    24	echo "#a_array=([apple]="\$100" [orange]="\$200 NTD")"
+    25	a_array=([apple]="\$100" [orange]="\$200 NTD")
+    26	echo "Apple cost ${a_array[apple]}"
+    27	echo "Orange cost ${a_array[orange]}"
+    28	echo "Obtain the list of indexes in the array"
+    29	echo "#echo \${!a_array[*]}"
+    30	echo ${!a_array[*]}
+    31	echo "#echo \${!a_array[@]}"
+    32	echo ${!a_array[@]}
+    33	echo "echo \${a_array[*]}"
+    34	echo ${a_array[*]}
+    35	
+root@csp9250:/home/csp9250/csp9250_git/shell_script_cookbook# ei[Kxit
+exit
+
+Script done on 2018年02月08日 (週四) 12時21分43秒

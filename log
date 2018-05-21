@@ -1,0 +1,13 @@
+-rwxr-xr-x 1 root root  800  2月  6 13:56 ./array_test.sh
+-rwxr-xr-x 1 root root  309  2月  8 11:59 ./condition_test.sh
+-rwxr-xr-x 1 root root  548  2月  6 15:45 ./date_test.sh
+-rwxr-xr-x 1 root root  188  2月  6 18:21 ./field_separator_test.sh
+-rwxr-xr-x 1 root root 1584  2月  6 12:15 ./file_test.sh
+-rwxr-xr-x 1 root root  258  2月  6 17:04 ./function_test.sh
+-rwxr-xr-x 1 root root  414  2月  8 10:48 ./IFS_test.sh
+-rwxr-xr-x 1 root root  101  2月  6 12:13 ./log.sh
+-rwxr-xr-x 1 root root 1104  2月  5 14:31 ./math_test.sh
+-rwxr-xr-x 1 root root  230  2月  6 17:18 ./quote_test.sh
+-rwxr-xr-x 1 root root  369  2月  6 18:05 ./read_test.sh
+-rw-r--r-- 1 root root    0  2月  8 12:51 ./TEST.sh
+-rwxr-xr-x 1 root root   29  2月  8 15:28 ./xargs_test.sh
